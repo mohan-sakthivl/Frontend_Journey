@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+</head>
+<body>
+    <center>
+    <header>
+        <h2>EMPLOYEE REGISTRATION FORM</h2>
+    </header>
+    
+    <section>
+        <div>
+            <form method="post">
+                
+                
+                <label for="Employee ID">Employee ID:</label>
+                <input type="text" id="Employee ID" name="Employee ID" placeholder="Enter the Employee ID" required><br /><br />
+
+                <label for="Employee name">Employee Name:</label>
+                <input type="text" id="Employee name" name="Employee Name" placeholder="Enter the Employee name" required><br /><br />
+
+                <label for="Employee email">Employee Email:</label>
+                <input type="email" id="Employee email" name="Employee Email" placeholder="Enter the Employee Email" required><br /><br />
+
+                <label for="mobilenumber">Mobile Number:</label>
+                <input type="tel" id="mobilenumber" name="MobileNumber" placeholder="Enter your Mobile Number" maxlength="10" minlength="10" required><br /><br />
+
+                <label for="Department">Department:</label>
+                <input type="text" id="Department" name="Department" placeholder="Enter the Department" required><br /><br />
+
+                <label for="Experience">Experience:</label>
+                <input type="radio" name="Experiencer" id="Experience" required>Fresher
+                <input type="radio" name="Experience" id="Experiencer" required>>2 Years
+                <input type="radio" name="Experience" id="Experiencer" required>>5 Years<br /><br />
+
+                <label for="Salary">Salary:</label>
+                <input type="number" id="Salary" name="Salary" placeholder="Enter your Salary" required><br /><br />
+
+                <label for="userskills">Skills:</label>
+                <input type="checkbox" name="Skills" id="userskills" required>HTML
+                <input type="checkbox" name="Skills" id="userskills" required>CSS
+                <input type="checkbox" name="Skills" id="userskills" required>JAVASCRIPT
+                <input type="checkbox" name="Skills" id="userskills"required>REACT
+                <input type="checkbox" name="Skills" id="userskills" required>MYSQL
+                <input type="checkbox" name="Skills" id="userskills" required>GIT<br /><br />
+
+                <label for="Resume">Resume Upload:</label>
+                <input type="file" name="Resume" id="Resume"><br /><br />
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>EMPLOYEE REPORT TABLE</h2>
+        </div>
+        <div>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Employee Name</th>
+                        <th>Department</th>
+                        <th>Experience</th>
+                        <th>Salary</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1051</td>
+                        <td>Mohan S</td>
+                        <td>Fullstack</td>
+                        <td>Fresher</td>
+                        <td>7LPA</td>
+                        <td>100%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1052</td>
+                        <td>Priya R</td>
+                        <td>Frontend Developer</td>
+                        <td>Fresher</td>
+                        <td>5LPA</td>
+                        <td>95%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1053</td>
+                        <td>Arun K</td>
+                        <td>Backend Developer</td>
+                        <td>1 Year Experience</td>
+                        <td>8LPA</td>
+                        <td>92%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1054</td>
+                        <td>Divya M</td>
+                        <td>UI/UX Designer</td>
+                        <td>Fresher</td>
+                        <td>6LPA</td>
+                        <td>98%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1055</td>
+                        <td>Karthik V</td>
+                        <td>Fullstack Developer</td>
+                        <td>2 Years Experience</td>
+                        <td>10LPA</td>
+                        <td>97%</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+            <br /><br />
+        </div>
+    </section>
+    </center>
+    
+</body>
+</html>

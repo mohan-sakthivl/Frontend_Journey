@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <center>
+    <header>
+        <h2>STUDENT REGISTRATION FORM</h2>
+    </header>
+    
+    <section>
+        <div>
+            <form method="post">
+
+                <label for="studentname">Student Name:</label>
+                <input type="text" id="studentname" name="Student Name" placeholder="Enter your name" required><br /><br />
+
+                <label for="studentemail">Email:</label>
+                <input type="email" id="studentemail" name="Email" placeholder="Enter your email" required><br /><br />
+
+                <label for="userpassword">Password:</label>
+                <input type="password" id="userpassword" name="password" placeholder="Enter your password" required><br /><br />
+
+                <label for="mobilenumber">Mobile Number:</label>
+                <input type="tel" id="mobilenumber" name="MobileNumber" placeholder="Enter your Mobile Number" maxlength="10" minlength="10" required><br /><br />
+
+                <label for="userage">Age:</label>
+                <input type="number" id="userage" name="Age" placeholder="Enter your Age" required><br /><br />
+
+                <label for="usergender">Gender:</label>
+                <input type="radio" name="Gender" id="usergender" required>Male
+                <input type="radio" name="Gender" id="usergender" required>Female
+                <input type="radio" name="Gender" id="usergender" required>Others<br /><br />
+
+                <label for="userskills">Skills:</label>
+                <input type="checkbox" name="Skills" id="userskills" required>HTML
+                <input type="checkbox" name="Skills" id="userskills" required>CSS
+                <input type="checkbox" name="Skills" id="userskills" required>JAVASCRIPT
+                <input type="checkbox" name="Skills" id="userskills"required>REACT
+                <input type="checkbox" name="Skills" id="userskills" required>MYSQL
+                <input type="checkbox" name="Skills" id="userskills" required>GIT<br /><br />
+
+                <label for="course">Course Selection:</label>
+                <select name="Course Selection" id="course">
+                    <option value="">select one...</option>
+                    <option value="frontend">frontend</option>
+                    <option value="backend">backend</option>
+                    <option value="fullstack">fullstack</option>
+                    <option value="testing">testing</option>
+                    <option value="cloud">cloud</option>
+
+                </select><br /><br />
+
+                <label for="address">Address:</label>
+                <textarea name="Address" id="address" cols="30" rows="4"></textarea><br /><br />
+
+                <label for="image">profile image:</label>
+                <input type="file" name="profileimage" id="image"><br /><br />
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>STUDENT DETAIL TABLE</h2>
+        </div>
+        <div>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>SLA ID</th>
+                        <th>Student Name</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                        <th>Mobile Number</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1051</td>
+                        <td>Mohan S</td>
+                        <td>Frontend Batch 2</td>
+                        <td>mohan.sakthivl@gmail.com</td>
+                        <td>9345396700</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>1052</td>
+                        <td>Priya R</td>
+                        <td>Frontend Batch 2</td>
+                        <td>priya.r@gmail.com</td>
+                        <td>9876543210</td>
+                        <td>95%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1053</td>
+                        <td>Arun K</td>
+                        <td>Frontend Batch 2</td>
+                        <td>arun.kumar@gmail.com</td>
+                        <td>9123456789</td>
+                        <td>88%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1054</td>
+                        <td>Divya M</td>
+                        <td>Frontend Batch 2</td>
+                        <td>divya.m@gmail.com</td>
+                        <td>9012345678</td>
+                        <td>92%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1055</td>
+                        <td>Karthik V</td>
+                        <td>Frontend Batch 2</td>
+                        <td>karthik.v@gmail.com</td>
+                        <td>9988776655</td>
+                        <td>97%</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <br /><br />
+        </div>
+    </section>
+    </center>
+    
+</body>
+</html>

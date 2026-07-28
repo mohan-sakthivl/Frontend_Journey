@@ -1,0 +1,45 @@
+*{
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+     scroll-behavior: smooth;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f2f2f2;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    background-color: cornflowerblue;
+    margin: auto;
+    padding: 10px;
+    width: max-content;
+}
+
+
+.hospital {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightcyan;
+    text-align: center;
+    
+}
+
+
+#doctors {
+    background-color: lightgreen;
+}
+
+#departments {
+    background-color: lightyellow;
+}
+
+#emergency {
+    background-color: lightcoral;
+}

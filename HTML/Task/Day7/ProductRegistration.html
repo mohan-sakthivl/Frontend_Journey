@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT REGISTRATION & INVENTORY REPORT</title>
+</head>
+<body>
+    <center>
+    <header>
+        <h2>PRODUCT REGISTRATION & INVENTORY REPORT</h2>
+    </header>
+    
+    <section>
+        <div>
+            <form method="post">
+                
+                
+                <label for="Product ID">Product ID:</label>
+                <input type="text" id="Product ID" name="Product ID" placeholder="Enter the Product ID" required><br /><br />
+
+                <label for="Product name">Product Name:</label>
+                <input type="text" id="Product name" name="Product Name" placeholder="Enter the Product name" required><br /><br />
+
+                <label for="Brand">Brand Name:</label>
+                <input type="text" id="Brand" name="Brand" placeholder="Enter the Brand name" required><br /><br />
+
+                <label for="Category">Category:</label>
+                <input type="text" id="Category" name="Category" placeholder="Enter the Category" required><br /><br />
+                
+                <label for="Price">Price:</label>
+                <input type="number" id="Price" name="Price" placeholder="Enter the Price" required><br /><br />
+
+                <label for="Quantity">Quantity:</label>
+                <select name="Quantity" id="Quantity">
+                    <option value="">select one...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+
+                </select><br /><br />
+
+                <label for="Supplier name">Supplier Name:</label>
+                <input type="text" id="Supplier name" name="Supplier Name" placeholder="Enter the Supplier name" required><br /><br />
+
+                <label for="Product Image">Product Image:</label>
+                <input type="file" name="Product Image" id="Product Image"><br /><br />
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>INVENTORY REPORT TABLE</h2>
+        </div>
+        <div>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Brand</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Stock Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1051</td>
+                        <td>PCB Board</td>
+                        <td>Rubin circuit</td>
+                        <td>400</td>
+                        <td>2</td>
+                        <td>76%</td>
+                    </tr>
+
+                   <tr>
+                        <td>1052</td>
+                        <td>Arduino Uno</td>
+                        <td>Tech Electronics</td>
+                        <td>650</td>
+                        <td>5</td>
+                        <td>90%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1053</td>
+                        <td>Resistor Kit</td>
+                        <td>Electro Hub</td>
+                        <td>150</td>
+                        <td>20</td>
+                        <td>85%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1054</td>
+                        <td>Breadboard</td>
+                        <td>Circuit World</td>
+                        <td>250</td>
+                        <td>8</td>
+                        <td>95%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1055</td>
+                        <td>Jumper Wires</td>
+                        <td>Prime Components</td>
+                        <td>120</td>
+                        <td>15</td>
+                        <td>88%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br /><br />
+        </div>
+    </section>
+    </center>
+    
+</body>
+</html>

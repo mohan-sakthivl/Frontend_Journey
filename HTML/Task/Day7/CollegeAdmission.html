@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEGE ADMISSION</title>
+</head>
+<body>
+    <center>
+    <header>
+        <h2>COLLEGE ADMISSION FORM</h2>
+    </header>
+    
+    <section>
+        <div>
+            <form method="post">
+
+                <label for="studentname">Student Name:</label>
+                <input type="text" id="studentname" name="Student Name" placeholder="Enter your name" required><br /><br />
+
+                <label for="Fathername">Father Name:</label>
+                <input type="text" id="Fathername" name="Father Name" placeholder="Enter your Father name" required><br /><br />
+
+                <label for="Mothername">Mother Name:</label>
+                <input type="text" id="Mothername" name="Mother Name" placeholder="Enter your Mother name" required><br /><br />
+
+                <label for="studentemail">Email:</label>
+                <input type="email" id="studentemail" name="Email" placeholder="Enter your email" required><br /><br />
+
+                <label for="mobilenumber">Mobile Number:</label>
+                <input type="tel" id="mobilenumber" name="MobileNumber" placeholder="Enter your Mobile Number" maxlength="10" minlength="10" required><br /><br />
+
+                <label for="DOB">Date of Birth:</label>
+                <input type="date" name="Date of Birth" id="DOB" required><br /><br />
+
+                <label for="usergender">Gender:</label>
+                <input type="radio" name="Gender" id="usergender" required>Male
+                <input type="radio" name="Gender" id="usergender" required>Female
+                <input type="radio" name="Gender" id="usergender" required>Others<br /><br />
+
+                <label for="Department">Department:</label>
+                <input type="text" id="Department" name="Department" placeholder="Enter the Department" required><br /><br />
+
+                <label for="Percentage">Percentage:</label>
+                <input type="number" name="Percentage" id="Percentage" min="0" max="100" required><br /><br />
+
+                <label for="address">Address:</label>
+                <textarea name="Address" id="address" cols="30" rows="4"></textarea><br /><br />
+
+                <label for="image">profile image:</label>
+                <input type="file" name="profileimage" id="image"><br /><br />
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>COLLEGE ADMISSION DETAIL</h2>
+        </div>
+        <div>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Application ID</th>
+                        <th>Student Name</th>
+                        <th>Department</th>
+                        <th>Percentage</th>
+                        <th>Email</th>
+                        <th>Admission Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1051</td>
+                        <td>Mohan S</td>
+                        <td>ECE</td>
+                        <td>8.15</td>
+                        <td>mohan.sakthivl@gmail.com</td>
+                        <td>100%</td>
+                    </tr>
+                   <tr>
+                        <td>1052</td>
+                        <td>Priya R</td>
+                        <td>CSE</td>
+                        <td>9.12</td>
+                        <td>priya.r@gmail.com</td>
+                        <td>96%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1053</td>
+                        <td>Arun K</td>
+                        <td>IT</td>
+                        <td>8.76</td>
+                        <td>arun.kumar@gmail.com</td>
+                        <td>91%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1054</td>
+                        <td>Divya M</td>
+                        <td>EEE</td>
+                        <td>8.94</td>
+                        <td>divya.m@gmail.com</td>
+                        <td>98%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1055</td>
+                        <td>Karthik V</td>
+                        <td>MECH</td>
+                        <td>8.48</td>
+                        <td>karthik.v@gmail.com</td>
+                        <td>94%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br /><br />
+        </div>
+    </section>
+    </center>
+    
+</body>
+</html>
