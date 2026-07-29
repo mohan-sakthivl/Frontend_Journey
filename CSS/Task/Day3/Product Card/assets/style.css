@@ -12,19 +12,76 @@ body{
 a{
     text-decoration: none;
 }
+.main{
+    background-color: cornsilk;
+    padding: 20px;
+    border: 1px 1px 0px 1px saddlebrown solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
 h1{
     background-color: moccasin;
     color: saddlebrown;
-    width: 1000px;
+    width: auto;
     padding: 20px;
     margin: auto;
+    border: 2px saddlebrown solid;
     text-align: center;
 }
-.main{
-    background-color: cornsilk;
-    width: 1000px;
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-
+.heli{
+    background-color: moccasin;
+    padding: 40px;
+    border: 2px blue solid;
+    margin: 40px;
+    width: 300px;
+    height: 600px;  
+    
+}
+.car{
+    background-color: moccasin;
+    padding: 40px;
+    border: 2px red solid;
+    margin: 40px;
+    width: 300px;
+    height: 600px;  
+}
+.crane{
+    background-color: moccasin;
+    padding: 40px;
+    border: 2px yellow solid;
+    margin: 40px;
+    width: 300px;
+    height: 600px;  
+    
+}
+.jet{
+    background-color: moccasin;
+    padding: 40px;
+    border: 2px gray solid;
+    margin: 40px;
+    width: 300px;
+    height: 600px;  
+    
+}
+img{
+    width: 150px;
+    height: auto;
+    margin: 20px;
+}
+h2{
+    padding: 10px;
+}
+h4{
+    padding: 10px;
+}
+span{
+    color: red;
+}
+button{
+    margin: 20px
 }
