@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#f4f4f4;
+    font-family:Arial, sans-serif;
+    
+}
+a{
+    text-decoration:none;
+}
+.card{
+    width:180px;
+    height:220px;
+    padding:20px;
+    margin:10px;
+    border:2px solid black;
+    border-radius:15px;
+    background-color:#f8d7da;
+    display:inline-block;
+}
+.card h2{
+    padding: 40px 0px;
+}
+.main{
+    padding: 60px 280px;
+    text-align: center;
+}
