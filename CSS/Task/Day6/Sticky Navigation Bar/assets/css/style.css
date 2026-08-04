@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.head{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    border: 2px black solid;
+    justify-content: space-between;
+}
+.title{
+    color: dodgerblue ;
+    padding: 25px;
+    text-align: center;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.nav>a{
+    color: dodgerblue;
+    text-decoration: none;
+    padding-right: 40px;
+    margin: 20px;
+    gap: 20px;
+    font-size: 18px;
+}
+.body{
+    padding-top: 20px;
+    background-color: rgb(236, 243, 243);
+}
+.para{
+    padding: 20px;
+}
