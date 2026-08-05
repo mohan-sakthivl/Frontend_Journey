@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:20px;
+    background-color: black;
+    color: white;
+}
+.title{
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: aqua;
+}
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    
+}
+
+.card{
+    padding-top: 20px ;
+    margin-left: 60px;
+    width:300px;
+    height:300px;
+    border-radius:10px;
+
+}
+.card1{
+    background-color: whitesmoke;
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 30px;
+}
+.card2{
+    background-color: whitesmoke;
+    color: lightblue;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 30px;
+}
+.card3{
+    background-color: whitesmoke;
+    color: limegreen;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 30px;
+}
+.card4{
+    background-color: whitesmoke;
+    color: lightpink;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 30px;
+}
+.card5{
+    background-color: whitesmoke;
+    color: orange;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 30px;
+}
+.card6{
+    background-color: whitesmoke;
+    color: lightslategray;
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 30px;
+}

@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:20px;
+}
+.title{
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery img{
+    padding-top: 20px ;
+    margin-left: 60px;
+    width:300px;
+    height:300px;
+    border-radius:10px;
+}
