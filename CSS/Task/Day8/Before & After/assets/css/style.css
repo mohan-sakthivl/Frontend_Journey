@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    height: 300px;
+    width: 500px;
+    margin: 130px auto;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+
+}
+.main > p{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p::before{
+    content: "This is ";
+    color: red;
+    margin-right: 10px;
+
+}
+p::after{
+    content: " ✔";
+    color: red;
+    margin-left: 10px;
+}

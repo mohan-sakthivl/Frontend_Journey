@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+p{
+    background-color: rgb(223, 217, 138);
+    border-radius: 30px;
+    margin: 30px 440px;
+    padding: 30px;
+}
+p::first-letter{
+    font-size: large;
+    font-weight: bold;
+    color: red;
+}
+p::first-line{
+    color: blue ;
+}
+p::selection{
+    background-color: yellow;
+    color: red;
+}
