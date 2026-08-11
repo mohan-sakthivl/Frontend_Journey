@@ -1,0 +1,84 @@
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #34495e;
+  color: white;
+}
+
+td a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.task-section {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.task-section h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.task-section p {
+  margin-top: 10px;
+}
+
+.task-section a:hover {
+  text-decoration: underline;
+}
+
+.task-section p a {
+  color: #2980b9;
+  text-decoration: none;
+  font-size: 14px;
+}

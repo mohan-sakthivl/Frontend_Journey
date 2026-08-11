@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+a{
+    text-decoration: none;
+}
+.headerTop{
+    background-color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 6px 11px 20px 0px #0000000d;
+    margin-bottom: 70px;
+}
+.logoOne{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navHeader > a{
+    color: black;
+    font-size: larger;
+    margin-right: 40px;
+    transition: 0.3s;
+}
+.navHeader > a:hover{
+    color: blue;
+}
+
+.navBtn{
+    width: 100px;
+    height: 35px;
+    background-color: blue;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+.navBtn:hover{
+    transform: scale(1.1);
+}
+.openCard{
+    background-color: rgba(236, 236, 236, 0.479);
+    width: 1200px;
+    height: 70vh;
+    margin: 10px 10px;
+    margin-left: 80px;
+    border-radius: 40px;
+    box-shadow: 0px 1px 10px 0px black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+
+}
+.openCard:hover{
+    transform: scale(0.8);
+}
+.openCard > img{
+    width: 500px;
+    height: 300px;
+    display: inline-flex;
+    margin-right:80px;
+    box-shadow: 2px 4px 12px 5px black;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.openCard > h2{
+    display: inline;
+    margin: 70px;
+    padding: 50px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.cardBody{
+    padding: 50px;
+    
+}
+.cardBody > h2{
+    
+    padding: 100px 40px 100px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card:hover{
+    transform: scale(0.9);
+}
+.card{
+    background-color: rgba(236, 236, 236, 0.479);
+    width: 400px;
+    height: 390px;
+    border-radius: 20px;
+    gap: 50px;
+    box-shadow: 0px 1px 10px 0px black;
+    transition: 0.3s;
+}
+.card > img{
+    width: 360px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+.card > h4,p,a{
+    line-height: 1.7;
+    padding: 5px 20px;
+}
+.secThree{
+    padding: 50px;
+}
+.secThree>h2{
+    padding: 20px 40px 50px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.list{
+    background-color: rgba(236, 236, 236, 0.479);
+    width: 400px;
+    height: 210px;
+    border-radius: 20px;
+    gap: 50px;
+    box-shadow: 0px 1px 10px 0px black;
+    margin: 40px 430px;
+}
+
+.list > p{
+    color: rgb(104, 98, 98);
+    text-align: start;
+    margin: 10px 20px;
+    padding-top: 10px;
+    transition: 0.3s;
+}
+.list > p:hover{
+    transform: scale(1.1);
+    color: black;
+}
+.end > h4{
+    padding: 60px 40px 0px 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.end > p{
+    padding: 10px 40px;
+}
+.end > a{
+    padding: 10px 40px;
+    transition: 0.3s;
+}
+
+.end  > a:hover{
+    color: red;
+    transform: translateX(5px);
+}
+.footer {
+    background-color: #1f2937; 
+    color: white;
+    margin-top: 80px;
+}
+
+.fContainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+}
+
+
+
+.Brand h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Brand p {
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+.Links h3,
+.fContact h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+
+.Links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Links a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Links a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+
+
+.fContact p {
+    color: #d1d5db;
+    margin-bottom: 12px;
+}
+
+.followUS {
+    margin-top: 25px;
+}
+
+
+
+.socialId {
+    display: flex;
+    gap: 15px;
+}
+
+.socialId a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socialId a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+
+
+.fBottom {
+    border-top: 1px solid #374151;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .fContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .fContainer {
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+    }
+
+    .fBottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+}
