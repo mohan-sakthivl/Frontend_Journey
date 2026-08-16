@@ -1,0 +1,132 @@
+/* Custom styles for RecruitLens — LinkedIn Profile Optimization & Recruiter Lens Platform */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --primary-blue: #0a66c2;
+  --primary-dark: #004182;
+  --slate-dark: #0f172a;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code, pre, .font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Smooth Tab and Transition states */
+.tab-content {
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.tab-content.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.tab-content:not(.hidden) {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Active Nav Links */
+.nav-link.active {
+  color: #0a66c2;
+  border-bottom: 2px solid #0a66c2;
+  font-weight: 600;
+}
+
+/* Score Progress Ring */
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+/* Subtle Card Hover Effects */
+.guide-card {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.guide-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+}
+
+/* Copy button feedback */
+.copy-btn {
+  position: relative;
+  transition: all 0.15s ease;
+}
+
+.copy-btn:active {
+  transform: scale(0.96);
+}
+
+/* Custom Checkbox Animation */
+.custom-checkbox:checked {
+  background-color: #0a66c2;
+  border-color: #0a66c2;
+}
+
+/* Recruiter Eye Tracking Overlay */
+.gaze-target {
+  position: relative;
+}
+
+.gaze-badge {
+  box-shadow: 0 0 0 2px #ffffff, 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Toast Notifications */
+#toast {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+
+/* Print Styles for Checklist Export */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, footer, #toast, .no-print, nav, .print-hide {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .card, .border {
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: none !important;
+  }
+}
