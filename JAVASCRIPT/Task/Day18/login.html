@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <h1>Login</h1>
+
+    <input type="email" id="email" placeholder="Email">
+    <br><br>
+
+    <input type="password" id="password" placeholder="Password">
+    <br><br>
+
+    <button id="loginBtn">Login</button>
+
+    <p id="message"></p>
+
+    <script>
+
+        let loginBtn = document.getElementById("loginBtn");
+
+        loginBtn.addEventListener("click",()=>{
+
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            let user = JSON.parse(localStorage.getItem("user"));
+
+            if (user.email === email && user.password === password) {
+
+                window.location.href = "dashboard.html";
+
+            } else {
+
+                document.getElementById("message").textContent =
+                    "Invalid email or password";
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

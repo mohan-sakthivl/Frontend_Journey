@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Handling</title>
+  </head>
+  <body>
+    <h1>Promise Handling</h1>
+
+    <button id="btn">Run</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+
+      let promise = new Promise((resolve, reject) => {
+        let success = true;
+
+        if (success) {
+          resolve("Data received");
+        } else {
+          reject("Something went wrong");
+        }
+      });
+
+      btn.addEventListener("click",() => {
+           promise.then((result) => {
+            console.log(result);
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+          .finally(() => {
+            console.log("Operation finished");
+          });
+      });
+    </script>
+  </body>
+</html>

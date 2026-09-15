@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+
+    <h1>Employee Details</h1>
+
+    <input type="text" id="name" placeholder="Employee Name">
+    <input type="text" id="department" placeholder="Department">
+    <input type="number" id="salary" placeholder="Salary">
+
+    <button id="btn">Add Employee</button>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody id="output"></tbody>
+
+    </table>
+
+    <script>
+
+        let employees = [];
+
+        let btn = document.getElementById("btn");
+        let output = document.getElementById("output");
+
+        btn.addEventListener("click",()=>{
+
+            let name = document.getElementById("name").value;
+            let department = document.getElementById("department").value;
+            let salary = document.getElementById("salary").value;
+
+            let employee = {
+                name: name,
+                department: department,
+                salary: salary
+            };
+
+            employees.push(employee);
+
+            output.innerHTML = "";
+
+            employees.forEach((employee)=>{
+
+                let row = document.createElement("tr");
+
+                row.innerHTML = `
+                    <td>${employee.name}</td>
+                    <td>${employee.department}</td>
+                    <td>${employee.salary}</td>
+                `;
+
+                output.appendChild(row);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

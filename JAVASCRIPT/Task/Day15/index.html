@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        #text{
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease;}
+
+        #text.show {
+            max-height: 100px;
+            opacity: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <p id="text">This is the paragraph.</p>
+
+    <button id="toggleBtn">Show</button>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

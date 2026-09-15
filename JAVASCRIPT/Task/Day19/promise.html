@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise</title>
+  </head>
+  <body>
+    <h1>Promise</h1>
+
+    <button id="btn">Run Promise</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+      let promise = new Promise((resolve, reject) => {
+        let success = true;
+
+        if (success) {
+          resolve("Promise successful");
+        } else {
+          reject("Promise failed");
+        }
+      });
+
+      btn.addEventListener("click",()=>{
+        promise.then((result) => {
+          console.log(result);
+        });
+      });
+    </script>
+  </body>
+</html>

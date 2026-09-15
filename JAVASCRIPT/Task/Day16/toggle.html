@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+
+    <style>
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="card" class="card">
+        <h2>My Card</h2>
+        <p>This is my card content.</p>
+    </div>
+
+    <button id="btn">Toggle Theme</button>
+
+    <script>
+
+        let card = document.getElementById("card");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click",()=>{
+
+            card.classList.toggle("dark");
+
+        });
+
+    </script>
+
+</body>
+</html>

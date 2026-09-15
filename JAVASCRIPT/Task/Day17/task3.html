@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <style>
+
+        .card {
+            width: 250px;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Product Details</h1>
+
+    <input type="text" id="name" placeholder="Product Name">
+    <input type="number" id="price" placeholder="Price">
+    <input type="text" id="category" placeholder="Category">
+
+    <button id="btn">Add Product</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        let products = [];
+
+        let btn = document.getElementById("btn");
+        let output = document.getElementById("output");
+
+        btn.addEventListener("click", ()=>{
+
+            let name = document.getElementById("name").value;
+            let price = document.getElementById("price").value;
+            let category = document.getElementById("category").value;
+
+            let product = {
+                name: name,
+                price: price,
+                category: category
+            };
+
+            products.push(product);
+
+            output.innerHTML = "";
+
+            products.forEach((product)=>{
+
+                let div = document.createElement("div");
+
+                div.classList.add("card");
+
+                div.innerHTML = `
+                    <h2>${product.name}</h2>
+                    <p>Price: ${product.price}</p>
+                    <p>Category: ${product.category}</p>
+                `;
+
+                output.appendChild(div);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

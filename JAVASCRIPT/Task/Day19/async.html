@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Await</title>
+  </head>
+  <body>
+    <h1>Async Await</h1>
+    <button id="btn">Get Data</button>
+    <script>
+      let btn = document.getElementById("btn");
+      let promise = new Promise((resolve) => {
+        resolve("Data received");
+      });
+
+      async function getData() {
+        let result = await promise;
+
+        console.log(result);
+      }
+
+      btn.addEventListener("click",() => {
+        getData();
+      });
+    </script>
+  </body>
+</html>
