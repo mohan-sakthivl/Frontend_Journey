@@ -1,0 +1,47 @@
+.header {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 30px;
+}
+
+.profile-card {
+  width: 300px;
+  height: 350px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+ 
+}
+
+.role {
+  color: #666;
+  font-size: 16px;
+}
+
+.profile-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+.profile-button:hover {
+  background-color: #444;
+}
+
+.profile-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

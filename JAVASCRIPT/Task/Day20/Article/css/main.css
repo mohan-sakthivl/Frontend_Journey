@@ -74,12 +74,13 @@ body {
   background: #ffffff;
   border-bottom: 1px solid var(--border-color);
   z-index: 990;
-  padding: 0.9rem 2rem;
+  padding: 0.9rem 2.5rem;
+  width: 100%;
 }
 
 .header-inner {
-  max-width: var(--container-width);
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,6 +96,7 @@ body {
   font-weight: 700;
   font-size: 1.15rem;
   letter-spacing: -0.2px;
+  flex-shrink: 0;
 }
 
 .brand-dot {
@@ -105,11 +107,12 @@ body {
   display: inline-block;
 }
 
-/* Navigation Links */
+/* Navigation Links - Pushed to the Right */
 .series-nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-left: auto;
 }
 
 .series-link {
