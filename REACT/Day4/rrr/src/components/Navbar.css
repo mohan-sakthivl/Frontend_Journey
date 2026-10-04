@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  background-color: #222;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: lightblue;
+}
+
+.navbar a.active {
+  color: yellow;
+  font-weight: bold;
+  border-bottom: 2px solid yellow;
+  padding-bottom: 5px;
+}
